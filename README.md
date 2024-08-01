@@ -131,13 +131,17 @@ To ensure your ESP32 project is functioning correctly, follow these steps to tes
      2. **Expected Outcome**: The LED should remain OFF when there is light and no motion.
      3. **Verification**: Confirm the LED state and check the serial output to verify that the light sensor is detecting light and the motion sensor is reporting no motion.
 
-3. **Monitoring and Debugging**
+3. **Demo Videos**
+
+   - **Demo for Scenarios 1 and 2**: View the demonstration of scenarios 1 and 2 in action by watching the following GIF:
+     ![Testing Scenarios 1 & 2](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/TestingSenarios1%2B2.gif)
+
+4. **Monitoring and Debugging**
    - **Serial Monitor**: Use the Serial Monitor in the Arduino IDE to observe the light levels, motion detection status, and server responses.
    - **Database**: Check the database to ensure that the sensor data is being recorded correctly as per the conditions set in the ESP32 code.
 
-4. **Adjustments**
+5. **Adjustments**
    - If the LED does not behave as expected, verify the sensor connections, check the code logic, and ensure the server URL and credentials are correct.
    - Adjust the `LIGHT_THRESHOLD` in the ESP32 code if needed to match the sensitivity of your light sensor.
 
 By following these steps, you can verify that your ESP32 project accurately controls the LED based on the readings from the light and motion sensors, and correctly logs the sensor data to the database.
-
