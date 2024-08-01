@@ -15,7 +15,7 @@ This project demonstrates how to use an ESP32 to control an LED based on reading
 
 1. **Create the Database and Table**
 
-   [Download the SQL script](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/sensor_data.sql) and run it in your MySQL/MariaDB server to create the `sensor_data` table.
+   [Download the SQL script](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/sensor_data.sql) and run it in your MySQL server to create the `sensor_data` table.
 
 2. **PHP Script**
 
