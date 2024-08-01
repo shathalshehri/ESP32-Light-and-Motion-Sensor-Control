@@ -45,7 +45,9 @@ To ensure your ESP32 project is functioning correctly, follow these steps to tes
      2. **Expected Outcome**: The LED should turn ON when the light sensor detects no light and the motion sensor detects motion.
      3. **Verification**: Check the LED state and monitor the serial output for confirmation of the sensor values and server response.
      4. **Demo**: View the demonstration of scenarios 1 and 2 in action by watching the following GIF:
-        ![Testing Scenarios 1 & 2](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/TestingSenarios1%2B2.gif)
+ 
+ ![Testing Scenarios 1 & 2](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/TestingSenarios1%2B2.gif)
+
 
    - **Scenario 2: No Light and No Motion Detected**
      1. **Environment**: Place the light sensor in a dark area and ensure the motion sensor is not detecting any motion.
