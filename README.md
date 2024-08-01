@@ -61,6 +61,8 @@ To ensure your ESP32 project is functioning correctly, follow these steps to tes
      3. **Verification**: Confirm the LED state and check the serial output to verify that the light sensor is detecting light and the motion sensor is reporting no motion.
      4. **Picture**: View the setup for scenario 3 in the following image:
         ![Scenario 3](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/Scenario3.jpeg)
+     5. **Serial Monitor**: Check the serial monitor output for scenario 3:
+        ![Scenario 3 Serial Monitor](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/Scenario3SerialMonitor.jpeg)
 
 3. **Monitoring and Debugging**
    - **Serial Monitor**: Use the Serial Monitor in the Arduino IDE to observe the light levels, motion detection status, and server responses.
