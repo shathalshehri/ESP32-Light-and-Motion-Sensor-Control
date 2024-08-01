@@ -41,7 +41,7 @@ To ensure your ESP32 project is functioning correctly, follow these steps to tes
 2. **Testing Scenarios**
 
    - **Scenario 1: No Light and Motion Detected**
-     1. **Environment**: Place the light sensor in a completely dark area and ensure the motion sensor is detecting motion.
+     1. **Environment**: Place the light sensor in a completely dark area and ensure the motion sensor is detecting motion. Note that a blue tape is placed on top of the light sensor to block light.
      2. **Expected Outcome**: The LED should turn ON when the light sensor detects no light and the motion sensor detects motion.
      3. **Verification**: Check the LED state and monitor the serial output for confirmation of the sensor values and server response.
      4. **Demo**: View the demonstration of scenarios 1 and 2 in action by watching the following GIF:
@@ -50,16 +50,16 @@ To ensure your ESP32 project is functioning correctly, follow these steps to tes
 
 
    - **Scenario 2: No Light and No Motion Detected**
-     1. **Environment**: Place the light sensor in a dark area and ensure the motion sensor is not detecting any motion.
+     1. **Environment**: Place the light sensor in a dark area and ensure the motion sensor is not detecting any motion. Note that a blue tape is placed on top of the light sensor to block light.
      2. **Expected Outcome**: The LED should remain OFF when there is no light and no motion.
      3. **Verification**: Observe the LED state and check the serial output to verify that both sensors are reporting no light and no motion.
-     4. **Demo**: See the GIF for scenarios 1 and 2 above.
+     4. **Demo**: See the GIF for scenarios (1 and 2) above.
 
    - **Scenario 3: Light Detected and No Motion**
-     1. **Environment**: Expose the light sensor to light and ensure the motion sensor is not detecting any motion. Note that a blue tape is placed on top of the light sensor to block light.
+     1. **Environment**: Expose the light sensor to light and ensure the motion sensor is not detecting any motion. 
      2. **Expected Outcome**: The LED should remain OFF when there is light and no motion.
      3. **Verification**: Confirm the LED state and check the serial output to verify that the light sensor is detecting light and the motion sensor is reporting no motion.
-     4. **Picture**: View the setup for scenario 3 in the following image, where blue tape is used to cover the light sensor:
+     4. **Picture**: View the setup for scenario 3 in the following image:
         ![Scenario 3](https://github.com/shathalshehri/ESP32-Light-and-MotionSensorControl/blob/main/Scenario3.jpeg)
 
 3. **Monitoring and Debugging**
