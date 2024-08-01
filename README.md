@@ -104,3 +104,38 @@ void sendToServer(int lightLevel, bool motionDetected) {
     Serial.println("Error: Not connected to WiFi");
   }
 }
+## Testing the System
+
+To ensure your ESP32 project is functioning correctly, follow these steps to test the different scenarios:
+
+1. **Setup Hardware and Software**
+   - **Hardware**: Connect the light sensor, motion sensor, and LED to the ESP32 according to the provided circuit diagram.
+   - **Software**: Ensure the ESP32 code is uploaded and configured correctly, and the PHP script is deployed on your server.
+
+2. **Testing Scenarios**
+
+   - **Scenario 1: No Light and Motion Detected**
+     1. **Environment**: Place the light sensor in a completely dark area and ensure the motion sensor is detecting motion.
+     2. **Expected Outcome**: The LED should turn ON when the light sensor detects no light and the motion sensor detects motion.
+     3. **Verification**: Check the LED state and monitor the serial output for confirmation of the sensor values and server response.
+
+   - **Scenario 2: No Light and No Motion Detected**
+     1. **Environment**: Place the light sensor in a dark area and ensure the motion sensor is not detecting any motion.
+     2. **Expected Outcome**: The LED should remain OFF when there is no light and no motion.
+     3. **Verification**: Observe the LED state and check the serial output to verify that both sensors are reporting no light and no motion.
+
+   - **Scenario 3: Light Detected and No Motion**
+     1. **Environment**: Expose the light sensor to light and ensure the motion sensor is not detecting any motion.
+     2. **Expected Outcome**: The LED should remain OFF when there is light and no motion.
+     3. **Verification**: Confirm the LED state and check the serial output to verify that the light sensor is detecting light and the motion sensor is reporting no motion.
+
+3. **Monitoring and Debugging**
+   - **Serial Monitor**: Use the Serial Monitor in the Arduino IDE to observe the light levels, motion detection status, and server responses.
+   - **Database**: Check the database to ensure that the sensor data is being recorded correctly as per the conditions set in the ESP32 code.
+
+4. **Adjustments**
+   - If the LED does not behave as expected, verify the sensor connections, check the code logic, and ensure the server URL and credentials are correct.
+   - Adjust the `LIGHT_THRESHOLD` in the ESP32 code if needed to match the sensitivity of your light sensor.
+
+By following these steps, you can verify that your ESP32 project accurately controls the LED based on the readings from the light and motion sensors, and correctly logs the sensor data to the database.
+
