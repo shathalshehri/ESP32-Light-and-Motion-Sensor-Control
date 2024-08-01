@@ -104,6 +104,8 @@ void sendToServer(int lightLevel, bool motionDetected) {
     Serial.println("Error: Not connected to WiFi");
   }
 }
+```
+
 ## Testing the System
 
 To ensure your ESP32 project is functioning correctly, follow these steps to test the different scenarios:
