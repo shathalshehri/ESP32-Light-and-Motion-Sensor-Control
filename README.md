@@ -9,7 +9,7 @@ This project demonstrates how to use an ESP32 to control an LED based on reading
 - **Motion Sensor (PIR)**: Detects motion
 - **LED**: Indicator light
 - **WiFi Network**: For connecting the ESP32 to the server
-- **Database**: MySQL or MariaDB to store sensor data
+- **Database**: MySQL to store sensor data
 
 ## Database Setup
 
